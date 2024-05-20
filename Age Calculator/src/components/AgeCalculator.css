@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: linear-gradient(rgb(157, 157, 255),rgb(255, 103, 103));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  height: 400px;
+  width: 700px;
+  background-color: rgb(240, 240, 255);
+  margin-top: 125px;
+  border-radius: 10px;
+  padding: 20px;
+ 
+}
+.container_title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 0;
+}
+.heading{
+  font-size: 35px;
+  font-weight: 400;
+}
+.filed_container{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  
+}
+.DOB{
+ 
+  padding: 10px;
+  height: 230px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.DOB>h2{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.age{
+  
+  padding: 10px;
+  width: 270px;
+}
+.age>h2{
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.date{
+  margin: 20px;
+  height: 50px;
+  width: 200px;
+  padding: 10px;
+  font-size: 20px;
+}
+.btn_container{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 5px;
+}
+button{
+  height: 40px;
+  width: 100px;
+  color: white;
+  border-radius: 5px;
+  border-style: none;
+}
+.btn1{
+  background-color: blue;
+  cursor: pointer;
+}
+.btn1:hover{
+  background-color: rgb(77, 77, 255);
+  cursor: pointer;
+}
+.btn2{
+  background-color: red;
+  cursor: pointer;
+}
+.btn2:hover{
+  background-color: rgb(255, 65, 65);
+  cursor: pointer;
+}
+.age_cls{
+  color: blue;
+font-size: 90px;
+text-align: center;
+margin-top: 20px;
+}
