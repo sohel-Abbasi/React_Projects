@@ -1,0 +1,13 @@
+.square-item{
+    width: 90px;
+    height: 90px;
+    background: rebeccapurple;
+}
+
+.square-item:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.assImage{
+    padding: 2px;
+}
