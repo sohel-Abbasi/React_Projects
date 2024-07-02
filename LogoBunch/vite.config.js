@@ -2,6 +2,8 @@ import path from "path";
 import react from "@vitejs/plugin-react";
 
 import { defineConfig } from "vite";
+import { Server } from "http";
+import { strict } from "assert";
 
 export default defineConfig({
   plugins: [react()],
@@ -10,4 +12,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  server:{
+    port:'3333',
+    strictPort:true,
+    proxy:{
+      '/png':'https://logoexpress.tubeguruji.com',
+    }
+  }
 });
+
