@@ -10,7 +10,8 @@ const ColorPickerController = ({hideController=false,selectedColor}) => {
   return (
     <div>
          <p className=' mb-2 text-sm text-red-400'>Note : for icon display tap on color picker</p>
-      <ColorPicker value={color} onChange={(e)=>{setColor(e);
+      <ColorPicker className=" cursor-pointer"
+       value={color} onChange={(e)=>{setColor(e);
         selectedColor(e)
       }} 
       hideControls={hideController}

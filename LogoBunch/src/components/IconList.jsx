@@ -27,17 +27,17 @@ const IconList = ({ selectedIcon }) => {
            getPngIcons();
    },[])
 
-  const Icon = ({ name, color, size }) => {
+  const Icon = ({ name, color, size ,icon}) => {
     const LucidIcon = icons[name];
     if (!LucidIcon) {
       return;
     }
-    return <LucidIcon color={color} size={size} />;
+    return <LucidIcon color={color} size={size} icon={icon} />;
   };
 
   const getPngIcons= ()=>{
        axios.get(BASE_URL+"/getIcons.php").then(resp=>{
-            console.log(resp.data);
+           
             setPngIconList(resp.data);
        })
   }
@@ -53,7 +53,7 @@ const IconList = ({ selectedIcon }) => {
         >
           {icon?.includes('.png')?
             <img src={BASE_URL+"/png/"+icon} /> :
-            <Icon name={icon} color={"#000"} size={20} />
+            <Icon name={icon} icon={icon} color={"#000"} size={20} />
           }
          
         </div>
@@ -80,7 +80,7 @@ const IconList = ({ selectedIcon }) => {
                       setIcon(icon);
                     }}
                   >
-                    <Icon name={icon} color={"#000"} size={20} key={index} />
+                    <Icon name={icon} color={"#000"} icon={icon} size={20} key={index} />
                   </div>
                 ))}
               </div>

@@ -19,7 +19,7 @@ const BackgroundController = () => {
       bgPadding: padding,
       bgColor: color,
     };
-       setUpdateStorage(updateValue);
+       setUpdateStorage(updateValue); // 
     localStorage.setItem("value", JSON.stringify(updateValue));
   });
 
@@ -33,6 +33,7 @@ const BackgroundController = () => {
           Rounded <span>{rounded} px</span>{" "}
         </label>
         <Slider
+        className=" cursor-pointer"
           defaultValue={[rounded]}
           max={512}
           step={1}
@@ -46,7 +47,8 @@ const BackgroundController = () => {
         >
           Padding <span>{padding} px</span>{" "}
         </label>
-        <Slider
+        <Slider 
+        className=" cursor-pointer"
           defaultValue={[padding]}
           max={100}
           step={1}

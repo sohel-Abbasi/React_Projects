@@ -34,7 +34,7 @@ const LogoPreview = ({ downloadIcon, setDownloadIcon }) => {
     });
   };
 
-  const Icon = ({ name, color, size, rotate }) => {
+  const Icon = ({ name, color, size, rotate,icon }) => {
     const LucidIcon = icons[name];
     if (!LucidIcon) {
       return null;
@@ -43,6 +43,7 @@ const LogoPreview = ({ downloadIcon, setDownloadIcon }) => {
       <LucidIcon
         color={color}
         size={size}
+        icon={icon} //
         style={{
           transform: `rotate(${rotate}deg)`,
         }}
@@ -53,7 +54,7 @@ const LogoPreview = ({ downloadIcon, setDownloadIcon }) => {
   return (
     <div className="flex justify-center items-center h-screen">
       <div
-        className="h-[500px] w-[500px] bg-gray-200 outline-dotted outline-gray-300"
+        className="h-[500px] w-[500px] bg-gray-200 outline-dotted outline-gray-300 mb-5"
         style={{
           padding: storageValue?.bgPadding,
         }}
@@ -78,13 +79,14 @@ const LogoPreview = ({ downloadIcon, setDownloadIcon }) => {
             <Icon
               name={storageValue?.icon}
               color={storageValue?.iconColor}
+              icon={storageValue?.icon} //
               size={storageValue?.iconSize}
               rotate={storageValue?.iconRotate}
             />
           )}
         </div>
       </div>
-      <div className="h-[70px]"></div>
+      <div className="h-[70px] mb-3"></div>
     </div>
   );
 };

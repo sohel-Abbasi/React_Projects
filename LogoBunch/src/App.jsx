@@ -34,7 +34,7 @@ function App() {
           <div className="md:col-span-3">
             <LogoPreview downloadIcon={downloadIcon} setDownloadIcon={setDownloadIcon} />
           </div>
-          <div className="w-screen md:col-span-1 ">Ads Banner</div>
+          <div className="w-screen md:col-span-1 border h-screen">Ads Banner</div>
         </div>
       </div>
     </UpdateStorageContext.Provider>
