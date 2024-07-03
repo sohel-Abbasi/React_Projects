@@ -42,7 +42,7 @@ const IconController = () => {
             Size <span>{size} px</span>{" "}
           </label>
           <Slider
-          className=" cursor-pointer"
+          className=" cursor-pointer bg-slate-300"
             defaultValue={[size]}
             max={512}
             step={1}
@@ -58,7 +58,7 @@ const IconController = () => {
             Rotate <span>{rotate} °</span>{" "}
           </label>
           <Slider
-          className=" cursor-pointer"
+          className=" cursor-pointer bg-slate-300"
             defaultValue={[rotate]}
             max={360}
             step={1}

@@ -33,7 +33,7 @@ const BackgroundController = () => {
           Rounded <span>{rounded} px</span>{" "}
         </label>
         <Slider
-        className=" cursor-pointer"
+        className=" cursor-pointer bg-slate-300"
           defaultValue={[rounded]}
           max={512}
           step={1}
@@ -48,7 +48,7 @@ const BackgroundController = () => {
           Padding <span>{padding} px</span>{" "}
         </label>
         <Slider 
-        className=" cursor-pointer"
+        className=" cursor-pointer bg-slate-300"
           defaultValue={[padding]}
           max={100}
           step={1}
