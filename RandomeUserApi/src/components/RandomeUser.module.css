@@ -1,0 +1,20 @@
+.Main_Container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.user {
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  flex-direction: columns;
+  gap: 10px;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+.name {
+  font-weight: 700;
+}
